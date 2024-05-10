@@ -1,9 +1,19 @@
 /* logos and socials */
 
+.socials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
 
 /* General Styles */
 body {
-    background-color: #1e1e1e;
+    background-color: #000000;
+    overflow-x: hidden;
+    width: 100%;
+    margin:0px;
+    padding:0px;
 }
 
 a{
@@ -26,12 +36,13 @@ a{
 }
 
 .title {
-    padding: 25px;
-    font-size: 50px;
+    margin: 0px;
+    font-size: 48px;
+    padding: 5px;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 48px;
 }
 
 h2 {
@@ -49,33 +60,50 @@ p {
 
 /* Navigation */
 
-#hamburger{
+header{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left:0px;
+}
+
+.hamburger{
     position: absolute;
     padding: 10px;
-    top: 15px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
+    width: 28px;
+    height: auto;
     z-index: 1;
-    background-color: #FFFfff00;
-    border: none;
-    box-shadow: none;
 }
 
 /* footer */
 footer{
-    margin-top: 70px;
-    background-color: #0c0c0c;
-    position: relative;
-    bottom: 0px;
+
     
 }
 
+/*images*/
+.background-Image{
+    position: relative;
+}
 
 
 /* Button */
 
 
 
-/* Flexbox */
+/* positioning */
+.centre-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.centre-vertical{
+    position: absolute;
+    top:calc(50% - 20px);
+}
 
 
 /* Contact Details */
