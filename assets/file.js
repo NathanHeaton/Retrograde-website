@@ -1,10 +1,14 @@
 const mobileNav = document.getElementById("mobile-nav")
 const hidden = document.getElementsByClassName("start-hidden")
 const hamburgerButton = document.getElementsByClassName("hamburger")[0];
+const slidesUp = document.getElementsByClassName("slides-up");
 
 let mobileNavDisplay = false;
+let scrolledAmount = 0;
+let scrolledToTop= false;
+hamburgerButton.addEventListener("click", displayMobileNav);
+window.addEventListener("scroll",scrollElementUp);
 
-hamburgerButton.addEventListener("click", displayMobileNav)
 
 function displayMobileNav()
 {
@@ -28,4 +32,27 @@ $(document).ready(function()
     mobileNav.classList.add("flex");
     mobileNav.classList.remove("start-hidden");
     $(mobileNav).toggle();
+
+    document.documentElement.scrollTop = 0;
+
 })
+
+
+function scrollElementUp(){
+
+    let elementScrollAmount = 0;
+
+    scrolledAmount = document.documentElement.scrollTop;
+    elementScrollAmount = -1*(scrolledAmount);
+    if(elementScrollAmount < -240)
+    {
+        elementScrollAmount = -240;
+    }
+    // tanslates the element upwards by half the amount you scroll down
+    $(slidesUp).stop().css({
+        "transform":"translateY("+ elementScrollAmount+"px)"
+
+
+    });
+
+}
