@@ -27,12 +27,15 @@ a{
     font-size: x-large;
 }
 
+.button-link{padding: 0px;
+margin: 0px;}
+
 .nav-link{
     padding: 10px;
     text-decoration: none;
 }
 
-.title, h1, h2, p {
+.title, h1, h2, h3, p {
     color: #fff;
     font-family: "source sans 3", sans-serif;
     font-weight: 400;
@@ -60,7 +63,9 @@ h2 {
 }
 
 h3 {
-    color: #858585;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 p {
@@ -103,8 +108,9 @@ header{
     top: 0px;
     padding-top: 70px;
     width:100%;
+    height: 475px;;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.86) 75%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.86) 60%, rgba(0,0,0,0) 100%);
     flex-direction: column;
     align-items: center;
 }
@@ -144,7 +150,7 @@ footer{
     padding: 5px 40px;
     border: solid #ffffff 2px;
     box-shadow: none;
-    transition : 1000ms;
+    transition : 500ms;
     transform: translateY(0);
     display: flex;
     flex-direction: row;
@@ -153,12 +159,12 @@ footer{
 }
 
 .btn:hover{
-    transition : 1000ms;
+    transition : 500ms;
     padding: 5px 45px;
     transform : translateY(-5px);
     background: linear-gradient(153deg, #b8dcff 28%, #ffb1e9 100%);
     color: #000000;
-    border: solid 0px ;
+    border: solid 2px ;
     border-image: linear-gradient(153deg, #b8dcff 28%, #ffb1e9 100%);
     border-image-slice: 1;
 }
