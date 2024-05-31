@@ -8,6 +8,10 @@
 }
 
 /* General Styles */
+
+.desktop{
+    display: none;
+}
 body {
     background-color: #000000;
     overflow-x: hidden;
@@ -120,6 +124,7 @@ footer{
     margin-left:auto;
     margin-right: auto;
     width: 100%; 
+
         
 }
 
@@ -212,7 +217,7 @@ footer{
     justify-content: center;
     overflow-x: hidden;
 }
-.centre-vertical{
+.postion-socials{
     position: absolute;
     top:calc(50% - 20px);
 }
@@ -239,20 +244,50 @@ main{
 
 @media only screen and (min-width: 768px) {
     /* Desktop */
+    .mobile{
+        display: none;
+    }
+    .desktop{display: block;}
     /*section */
     main{
         margin-left:auto;
         margin-right: auto;
-        width: 80%; 
-        max-width: 1400px;
+        width: 70%; 
+        max-width: 1200px;
+        position: relative;
+        top:-140vh;
+
     }
+    header{
+
+    }
+
     footer{
-        margin-left:auto;
-        margin-right: auto;
         width: 100%; 
-        width: 80%; 
         max-width: 1400px;
             
+    }
+    /*links*/
+    .socials{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .postion-socials{
+        position: absolute;
+        top:calc(50vh);
+        right: 20vh;
+    }
+
+    #desktop-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: absolute;
+        top: 0px;
+        right:20vh ;
     }
     /*boxes*/
 
@@ -263,6 +298,23 @@ main{
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    .background-Image{
+        width: 1400px;
+        
+
+    }
+
+    /* positioning */
+
+    .centre-content{
+        position: relative;
+        top:0px;
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
 
 }
 

@@ -30,8 +30,11 @@ $(document).ready(function()
 {
     // sets up nav to be flex and toggled off
     mobileNav.classList.add("flex");
-    mobileNav.classList.remove("start-hidden");
-    $(mobileNav).toggle();
+    if(window.innerWidth < 768)
+    {
+        mobileNav.classList.remove("start-hidden");
+        $(mobileNav).toggle();
+    }
 
     document.documentElement.scrollTop = 0;
 
