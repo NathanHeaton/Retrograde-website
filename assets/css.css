@@ -258,10 +258,13 @@ main{
         top:-140vh;
 
     }
-    header{
+    .title{
+        font-size: 72px;
+        left: 20px;
+        top: 10px;
+        position: absolute;
 
     }
-
     footer{
         width: 100%; 
         max-width: 1400px;
@@ -277,7 +280,7 @@ main{
 
     .postion-socials{
         position: absolute;
-        top:calc(50vh);
+        top:150px;
         right: 20vh;
     }
 
@@ -286,9 +289,11 @@ main{
         flex-direction: row;
         flex-wrap: nowrap;
         position: absolute;
-        top: 0px;
-        right:20vh ;
-    }
+        top: 10px;
+        right:20px ;
+        height: 100px;
+        align-items: center;
+         }
     /*boxes*/
 
     .box-white,.box-white-center{
