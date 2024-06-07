@@ -59,3 +59,34 @@ function scrollElementUp(){
     });
 
 }
+
+function openInstagram()
+{
+    window.Location = 'instagram://user?username=retrogradeofficialband';
+    setTimeout(function(){
+        window.location = 'https://www.instagram.com/retrogradeofficialband';
+    },500)
+}
+
+function openSpotify()
+{
+    window.Location = 'spotify:artist:0WkxXleKZbhDF4t15nCtke';
+    setTimeout(function(){
+        window.location = 'https://open.spotify.com/artist/0WkxXleKZbhDF4t15nCtke';
+    },500)
+}
+
+function openWhatsapp()
+{
+    window.Location = 'https://wa.me/353851356490';
+    setTimeout(function(){
+        window.location = 'https://web.whatsapp.com/send?phone=353851456490';
+    },500)
+}
+
+function openYoutube(){
+    window.Location = 'vnd.youtube:Qswj55u5khk';
+    setTimeout(function(){
+        window.location = 'https://www.youtube.com/watch?v=Qswj55u5khk';
+    },500)
+}
