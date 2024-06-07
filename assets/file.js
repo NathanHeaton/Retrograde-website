@@ -90,3 +90,10 @@ function openYoutube(){
         window.location = 'https://www.youtube.com/watch?v=Qswj55u5khk';
     },500)
 }
+
+function openSpotifyTrack(t_track){
+    window.Location = 'spotify:track:' +t_track;
+    setTimeout(function(){
+        window.location = 'https://open.spotify.com/track/'+t_track;
+    },500)
+}
