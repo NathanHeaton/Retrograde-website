@@ -32,7 +32,7 @@ a{
     font-variation-settings:
       "XROT" 0,
       "YROT" 0;
-    font-size: x-large;
+    font-size: 18px;
 }
 
 .button-link{padding: 0px;
@@ -41,9 +41,10 @@ margin: 0px;}
 .nav-link{
     padding: 10px;
     text-decoration: none;
+    font-size: x-large;
 }
 
-.title, h1, h2, h3, p {
+.title, h1, h2, h3, h4, p {
     color: #fff;
     font-family: "source sans 3", sans-serif;
     font-weight: 400;
@@ -84,7 +85,14 @@ h4 {
 p {
     font-size: 18px;
 }
+.text-margin-small{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
+.text-margin-medium{
+    margin:20px  0 20px 0;
+}
 .small-text{
     font-size: 14px;
 }
@@ -95,6 +103,15 @@ p {
 
 .flex{
     display: flex;
+}
+
+.white-line{
+    border: none;
+    border-top: solid  4px;
+    border-image: linear-gradient(45deg, #cb9fa9 28%, #9dc1d3 100%);
+    border-image-slice: 1;
+    margin: 15px 0;
+    width: 100%;
 }
 /* Navigation */
 
@@ -198,12 +215,22 @@ footer{
 }
 .box-white,.box-white-center{
     background-color: rgba(0,0,0,0.86);
-    border: solid  2px;
+    border: solid  3px;
     border-image: linear-gradient(45deg, #cb9fa9 28%, #9dc1d3 100%);
     border-image-slice: 1;
     padding: 20px;
     border-left: #00000000;
     border-right: #00000000;
+}
+
+.box-white-narrow{
+    background-color: rgba(0,0,0,0.86);
+    border: solid  3px;
+    border-image: linear-gradient(45deg, #cb9fa9 28%, #9dc1d3 100%);
+    border-image-slice: 1;
+    border-left: #00000000;
+    border-right: #00000000;
+    padding: 20px;
 }
 
 .box-white-center{
@@ -230,12 +257,17 @@ footer{
 
 }
 
-#music-section{
+.flexbox-columns{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 30px;
 }
+
+.flex-columns{
+    width:100%;
+}
+
 /* positioning */
 .centre-content{
     position: relative;
@@ -264,6 +296,12 @@ main{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
 }
 
 /* Contact Details */
@@ -343,6 +381,15 @@ main{
         padding-right: 10%;
     }
 
+    .box-white-narrow{
+        background-color: rgba(0,0,0,0.86);
+        border: solid  3px;
+        border-image: linear-gradient(45deg, #cb9fa9 28%, #9dc1d3 100%);
+        border-image-slice: 1;
+        padding: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
     .background-Image{
         width: 1400px;
         
