@@ -64,15 +64,22 @@ function openInstagram()
 {
     window.location = 'instagram://user?username=retrogradeofficialband';
     setTimeout(function(){
-        window.location = 'https://www.instagram.com/retrogradeofficialband';
+        if (document.visibilityState == "visible")
+        {
+            window.location = 'https://www.instagram.com/retrogradeofficialband'
+        }        
     },1500)
+
 }
 
 function openSpotify()
 {
     window.location = 'spotify:artist:0WkxXleKZbhDF4t15nCtke';
     setTimeout(function(){
-        window.location = 'https://open.spotify.com/artist/0WkxXleKZbhDF4t15nCtke';
+        if (document.visibilityState == "visible")
+        {
+            window.location = 'https://open.spotify.com/artist/0WkxXleKZbhDF4t15nCtke';
+        }
     },1500)
 }
 
@@ -80,20 +87,29 @@ function openWhatsapp()
 {
     window.location = 'https://wa.me/353851356490';
     setTimeout(function(){
+        if (document.visibilityState == "visible")
+        {
         window.location = 'https://web.whatsapp.com/send?phone=353851456490';
+        }
     },1500)
 }
 
 function openYoutube(){
     window.location = 'vnd.youtube:Qswj55u5khk';
     setTimeout(function(){
+        if (document.visibilityState == "visible")
+        {
         window.location = 'https://www.youtube.com/watch?v=Qswj55u5khk';
+        }
     },1500)
 }
 
 function openSpotifyTrack(t_track){
     window.location = 'spotify:track:' +t_track;
     setTimeout(function(){
+        if (document.visibilityState == "visible")
+        {
         window.location = 'https://open.spotify.com/track/'+t_track;
+        }
     },3000)
 }
