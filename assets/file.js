@@ -2,6 +2,8 @@ const mobileNav = document.getElementById("mobile-nav")
 const hidden = document.getElementsByClassName("start-hidden")
 const hamburgerButton = document.getElementsByClassName("hamburger")[0];
 const slidesUp = document.getElementsByClassName("slides-up");
+const title = document.getElementsByClassName("title")[0];
+const header = document.getElementsByTagName("header")[0];
 
 let mobileNavDisplay = false;
 let scrolledAmount = 0;
@@ -35,8 +37,15 @@ $(document).ready(function()
         mobileNav.classList.remove("start-hidden");
         $(mobileNav).toggle();
     }
-
-    document.documentElement.scrollTop = 0;
+    $(header).animate({ opacity: "0.4" });
+    $(header).animate({top: "100px", opacity: "1",},
+        {
+        duration: 400,
+        easing: 'swing', // you can also use 'linear'
+        complete: function() {
+            console.log('Animation complete!');
+        }
+        });
 
 })
 

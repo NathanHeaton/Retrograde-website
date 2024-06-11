@@ -116,6 +116,7 @@ p {
 /* Navigation */
 
 header{
+    transform: translateY(-100px);
     position: absolute;
     top: 0px;
     width: 100%;
