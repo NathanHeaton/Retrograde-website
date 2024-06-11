@@ -173,6 +173,11 @@ footer{
     margin-top: 15px;
     
 }
+.gallery-portraits{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
 
 /* Button */
 .invisable{
@@ -268,6 +273,8 @@ footer{
     justify-content:center ;
     padding-top: 10px;
     padding-bottom: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .box{
@@ -428,7 +435,17 @@ main{
         justify-content: center;
         overflow-x: hidden;
     }
-
+    /*  Images */
+    .gallery-portraits{
+        width:calc(50% - 15px);
+        }
 
 }
 
+@media only screen and (min-width: 1400px) {
+
+    .gallery-portraits{
+        width:calc(33% - 30px);
+        }
+    
+}

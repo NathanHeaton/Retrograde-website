@@ -85,11 +85,11 @@ function openSpotify()
 
 function openWhatsapp()
 {
-    window.location = 'https://wa.me/353851356490';
+    window.location = 'https://wa.me/353831899888';
     setTimeout(function(){
         if (document.visibilityState == "visible")
         {
-        window.location = 'https://web.whatsapp.com/send?phone=353851456490';
+        window.location = 'https://web.whatsapp.com/send?phone=353831899888';
         }
     },1500)
 }
