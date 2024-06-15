@@ -36,10 +36,22 @@ a{
 }
 
 .button-link{padding: 0px;
-margin: 0px;}
+margin: 0px;
+text-decoration: none;}
+
+.social-link{padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.social-link:hover{
+    transition: 500ms;
+    scale: 1.2  ;
+}
+
 
 .nav-link{
-    padding: 10px;
+    margin: 10px 10px 0 10px;
     text-decoration: none;
     font-size: x-large;
 }
@@ -50,6 +62,27 @@ margin: 0px;}
     font-weight: 400;
     font-style: normal;
 
+}
+.other-pages{
+    border-bottom: solid transparent 2px ;
+}
+
+.other-pages:hover{
+    transition: 750ms;
+    margin: 0px;
+    padding: 10px 10px 0 10px;
+    border-bottom: solid white 2px ;
+}
+.current-page{
+    border-bottom: solid white 2px ;
+    
+
+}
+
+.current-page:hover{
+    transition: 500ms;
+    margin: 0px;
+    padding: 10px 10px 0 10px;
 }
 
 .title {
@@ -180,6 +213,10 @@ footer{
     margin-top: 30px;
 }
 
+.social-image{
+    width: 100%;
+}
+
 /* Button */
 .invisable{
     background-color: #00000000;
@@ -296,6 +333,9 @@ footer{
 }
 
 /* positioning */
+.space-bottom{
+    margin: 60px 0 200px;
+}
 .centre-content{
     position: relative;
     display: flex;
@@ -361,11 +401,19 @@ main{
         min-width: 800px;
 
     }
+
+    header{
+        display: flex;
+        justify-content: space-between; 
+        height: auto;
+    }
+
+    
     .title{
         font-size: 72px;
         left: 20px;
         top: 10px;
-        position: absolute;
+
 
     }
     footer{
@@ -388,15 +436,13 @@ main{
         right: 20vh;
     }
 
-    #desktop-nav{
+    .desktop-nav{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        position: absolute;
-        top: 10px;
-        right:20px ;
         height: 100px;
         align-items: center;
+        margin-right: 20px;
          }
     /*boxes*/
 
@@ -428,7 +474,12 @@ main{
     }
 
     /* positioning */
-
+    .space-bottom{
+        margin: 60px 0 120px;
+    }
+    .space-only-bottom{
+        margin: 0 0 120px;
+    }
     .centre-content{
         position: relative;
         top:0px;

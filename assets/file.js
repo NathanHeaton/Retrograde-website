@@ -40,7 +40,7 @@ $(document).ready(function()
     $(header).animate({ opacity: "0.4" });
     $(header).animate({top: "100px", opacity: "1",},
         {
-        duration: 400,
+        duration: 300,
         easing: 'swing', // you can also use 'linear'
         complete: function() {
             console.log('Animation complete!');
