@@ -189,6 +189,14 @@ footer{
        
 }
 
+.mobile-footer-nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+}
+
 /*images*/
 .background-Image{
     position: relative;
